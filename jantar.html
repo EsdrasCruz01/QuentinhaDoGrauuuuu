@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+    <title>Jantar - Quentinha do Grau</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Almoco.html">Almoço</a>
+            <a href="jantar.html">Jantar</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="sobremesas.html">Sobremesas</a>
+        </nav>
+    </header>
+
+    <h1 style="text-align: center;">Menu de Jantar</h1>
+
+    <div class="Imagem_Jantar1">
+        <img src="./Imagem/Salmao.jfif" title="Jantar1" />
+        <h3>Salmão Grelhado</h3>
+        <p>Delicioso salmão grelhado, servido com molho de limão e acompanhamentos de legumes sazonais.</p>
+        <p class="preco">R$ 65,00</p>
+        <button onclick="addToCart('Salmão Grelhado', 65)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Jantar2">
+        <img src="./Imagem/Pasta.jfif" title="Jantar2" />
+        <h3>Pasta ao Pesto</h3>
+        <p>Macarrão fresco envolto em um molho pesto de manjericão, acompanhado de pinhões e queijo parmesão.</p>
+        <p class="preco">R$ 42,00</p>
+        <button onclick="addToCart('Pasta ao Pesto', 42)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Jantar3">
+        <img src="./Imagem/Frutos.jfif" title="Jantar3" />
+        <h3>Frutos do Mar ao Alho</h3>
+        <p>Uma mistura de camarões e lulas refogados no alho e azeite, servidos com arroz de açafrão.</p>
+        <p class="preco">R$ 70,00</p>
+        <button onclick="addToCart('Frutos do Mar ao Alho', 70)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Jantar4">
+        <img src="./Imagem/Frango ao Curry.jfif" title="Jantar4" />
+        <h3>Frango ao Curry</h3>
+        <p>Frango cozido em um molho de curry aromático, servido com arroz de jasmim.</p>
+        <p class="preco">R$ 40,00</p>
+        <button onclick="addToCart('Frango ao Curry', 40)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Jantar5">
+        <img src="./Imagem/Risoto.jfif" title="Jantar5" />
+        <h3>Risoto Vegetariano</h3>
+        <p>Risoto cremoso com legumes frescos, parmesão e finalizado com ervas aromáticas.</p>
+        <p class="preco">R$ 38,00</p>
+        <button onclick="addToCart('Risoto Vegetariano', 38)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Jantar6">
+        <img src="./Imagem/Salada mediter.jfif" title="Jantar6" />
+        <h3>Salada Mediterrânea</h3>
+        <p>Uma mistura fresca de alface, tomate, pepino, azeitonas e queijo feta, com molho de azeite e limão.</p>
+        <p class="preco">R$ 25,00</p>
+        <button onclick="addToCart('Salada Mediterrânea', 25)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div id="cart" class="cart">
+        <h3>Carrinho de Compras</h3>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: R$ 0,00</p>
+    </div>
+
+</body>
+</html>

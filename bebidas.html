@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+    <title>Bebidas - Quentinha do Grau</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Almoco.html">Almoço</a>
+            <a href="jantar.html">Jantar</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="sobremesas.html">Sobremesas</a>
+        </nav>
+    </header>
+
+    <h1 style="text-align: center;">Menu de Bebidas</h1>
+
+    <div class="Imagem_Bebida1">
+        <img src="./Imagem/Abacaixi.jfif" title="Bebida1" />
+        <h3>Suco de Abacaxi</h3>
+        <p>Refrescante suco de abacaxi natural, perfeito para qualquer refeição.</p>
+        <p class="preco">R$ 10,00</p>
+        <button onclick="addToCart('Suco de Abacaxi', 10)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Bebida2">
+        <img src="./Imagem/Coca.jfif" title="Bebida2" />
+        <h3>Refrigerante</h3>
+        <p>Escolha entre nossos refrigerantes tradicionais, sempre gelados.</p>
+        <p class="preco">R$ 8,00</p>
+        <button onclick="addToCart('Refrigerante', 8)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Bebida3">
+        <img src="./Imagem/Cha.jfif" title="Bebida3" />
+        <h3>Chá Gelado</h3>
+        <p>Chá gelado caseiro, disponível nos sabores limão e pêssego.</p>
+        <p class="preco">R$ 12,00</p>
+        <button onclick="addToCart('Chá Gelado', 12)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Bebida4">
+        <img src="./Imagem/Ceverja.jfif" title="Bebida4" />
+        <h3>Cerveja Artesanal</h3>
+        <p>Cerveja artesanal local, perfeita para acompanhar suas refeições.</p>
+        <p class="preco">R$ 15,00</p>
+        <button onclick="addToCart('Cerveja Artesanal', 15)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Bebida5">
+        <img src="./Imagem/vinho.jfif" title="Bebida5" />
+        <h3>Vinho Tinto</h3>
+        <p>Um excelente vinho tinto, ideal para jantares especiais.</p>
+        <p class="preco">R$ 80,00</p>
+        <button onclick="addToCart('Vinho Tinto', 80)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Bebida6">
+        <img src="./Imagem/agua.jfif" title="Bebida6" />
+        <h3>Água Mineral</h3>
+        <p>Água mineral sempre fresca, ideal para acompanhar qualquer refeição.</p>
+        <p class="preco">R$ 5,00</p>
+        <button onclick="addToCart('Água Mineral', 5)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div id="cart" class="cart">
+        <h3>Carrinho de Compras</h3>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: R$ 0,00</p>
+    </div>
+
+</body>
+</html>

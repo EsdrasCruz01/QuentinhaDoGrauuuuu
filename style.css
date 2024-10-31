@@ -1,0 +1,102 @@
+/* Reset some basic styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navigation links */
+a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container for meal items */
+div {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Meal item styling */
+h3 {
+    font-size: 1.5em;
+    color: #343a40;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.preco {
+    font-size: 1.2em;
+    color: #28a745; /* Green for prices */
+    margin-top: 10px;
+}
+
+/* Flexbox for meal layout */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the first meal item for emphasis */
+.Imagem_Almoço1 {
+    border: 2px solid #007bff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+    div {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    div > * {
+        flex: 1;
+        margin: 10px;
+    }
+}
+
+header {
+    background-color: blanchedalmond;
+    padding: 20px;
+    text-align: center;
+}
+/* Estilo do botão LED */
+button {
+    background-color: #4caf50; /* Cor de fundo padrão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Diminuído o padding */
+    font-size: 0.9em; /* Diminuído o tamanho da fonte */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative; /* Para o efeito de brilho */
+}
+
+
+
+
+
+
+
+

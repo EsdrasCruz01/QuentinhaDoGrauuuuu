@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+    <title>Almoço - Quentinha do Grau</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Almoco.html">Almoço</a>
+            <a href="jantar.html">Jantar</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="sobremesas.html">Sobremesas</a>
+        </nav>
+    </header>
+
+    
+
+    <h1 style="text-align: center;">Menu de Almoço</h1>
+
+    <div class="Imagem_Almoço1">
+        <img src="./Imagem/Feijoda.jfif" title="Almoço1" />
+        <h3>Feijoada Completa</h3>
+        <p>A tradicional feijoada brasileira, feita com feijão preto, carne de porco, e acompanhada de arroz, farofa, couve e laranja.</p>
+        <p class="preco">R$ 500,00</p>
+        <button onclick="addToCart('Feijoada Completa', 500)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemAlmoço2">
+        <img src="./Imagem/Frango.jfif" title="Almoço2" />
+        <h3>Frango Grelhado com Salada</h3>
+        <p>Frango grelhado na brasa, servido com uma fresca salada de folhas verdes, tomate e molho de limão.</p>
+        <p class="preco">R$ 28,00</p>
+        <button onclick="addToCart('Frango Grelhado com Salada', 28)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemAlmoço3">
+        <img src="./Imagem/Lasanha.jfif" title="Almoço3" />
+        <h3>Lasanha de Carne</h3>
+        <p>Deliciosa lasanha com camadas de massa, carne moída, queijo e molho de tomate, assada até ficar dourada e borbulhante.</p>
+        <p class="preco">R$ 1900,00</p>
+        <button onclick="addToCart('Lasanha de Carne', 1900)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemAlmoço4">
+        <img src="./Imagem/Estrogonofe.jfif" title="Almoço4" />
+        <h3>Estrogonofe de Frango</h3>
+        <p>Frango em cubos cozido em um molho cremoso de cogumelos e creme de leite, servido com arroz e batata palha.</p>
+        <p class="preco">R$ 879,00</p>
+        <button onclick="addToCart('Estrogonofe de Frango', 879)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="ImagemAlmoço5">
+        <img src="./Imagem/Arroz.jfif" title="Almoço5" />
+        <h3>Arroz à Grega</h3>
+        <p>Arroz cozido com legumes variados, passas e azeitonas, um acompanhamento perfeito para qualquer prato.</p>
+        <p class="preco">R$ 200,00</p>
+        <button onclick="addToCart('Arroz à Grega', 200)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Almoço6">
+        <img src="./Imagem/salada.jfif" title="Almoço6" />
+        <h3>Salada Caesar</h3>
+        <p>Uma clássica salada Caesar com alface-romana, croutons crocantes e molho Caesar, finalizada com lascas de parmesão.</p>
+        <p class="preco">R$ 30,00</p>
+        <button onclick="addToCart('Salada Caesar', 30)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div id="cart" class="cart">
+        <h3>Carrinho de Compras</h3>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: R$ 0,00</p>
+    </div>
+</body>
+</html>

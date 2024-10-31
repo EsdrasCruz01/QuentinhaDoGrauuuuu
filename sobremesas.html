@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+    <title>Sobremesas - Quentinha do Grau</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Almoco.html">Almoço</a>
+            <a href="jantar.html">Jantar</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="sobremesas.html">Sobremesas</a>
+        </nav>
+    </header>
+
+    <h1 style="text-align: center;">Menu de Sobremesas</h1>
+
+    <div class="Imagem_Sobremesa1">
+        <img src="./Imagem/pudin.jfif" title="Sobremesa1" />
+        <h3>Pudim de Leite</h3>
+        <p>Clássico pudim de leite condensado, cremoso e delicioso.</p>
+        <p class="preco">R$ 15,00</p>
+        <button onclick="addToCart('Pudim de Leite', 15.00)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Sobremesa2">
+        <img src="./Imagem/Torta.jfif" title="Sobremesa2" />
+        <h3>Torta de Limão</h3>
+        <p>Deliciosa torta de limão com merengue suave e crosta crocante.</p>
+        <p class="preco">R$ 20,00</p>
+        <button onclick="addToCart('Torta de Limão', 20.00)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Sobremesa3">
+        <img src="./Imagem/Bolo.jfif" title="Sobremesa3" />
+        <h3>Bolo de Cenoura</h3>
+        <p>Bolo de cenoura fofinho coberto com chocolate derretido.</p>
+        <p class="preco">R$ 18,00</p>
+        <button onclick="addToCart('Bolo de Cenoura', 18.00)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Sobremesa4">
+        <img src="./Imagem/Brigadeiro.jfif" title="Sobremesa4" />
+        <h3>Brigadeiro</h3>
+        <p>Docinho brasileiro feito de leite condensado, chocolate e granulado.</p>
+        <p class="preco">R$ 2,50</p>
+        <button onclick="addToCart('Brigadeiro', 2.50)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Sobremesa5">
+        <img src="./Imagem/Mousse.jfif" title="Sobremesa5" />
+        <h3>Mousse de Chocolate</h3>
+        <p>Cremosa mousse de chocolate, perfeita para os amantes de chocolate.</p>
+        <p class="preco">R$ 12,00</p>
+        <button onclick="addToCart('Mousse de Chocolate', 12.00)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="Imagem_Sobremesa6">
+        <img src="./Imagem/Tiramisu.jfif" title="Sobremesa6" />
+        <h3>Tiramisu</h3>
+        <p>Clássico italiano com camadas de café, mascarpone e cacau.</p>
+        <p class="preco">R$ 22,00</p>
+        <button onclick="addToCart('Tiramisu', 22.00)">Adicionar ao Carrinho</button>
+    </div>
+
+    <div id="cart" class="cart">
+        <h3>Carrinho de Compras</h3>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: R$ 0,00</p>
+    </div>
+
+
+</body>
+</html>
